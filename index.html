@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Loai Esam | Graphic Designer">
+    <title>CodeVia | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- شريط التنقل (Navbar) -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <!-- الشعار (تم تصغيره وإضافة كلاس له) -->
+                <img src="images/logo.png" alt="Lamsa Design Logo" class="logo-img">
+                <!-- النص تحته -->
+                <span class="logo-text">CodeVia</span>
+            </div>
+            <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                
+                <li><a href="#projects"> الأعمال</a></li>
+                <li><a href="#about">عني</a></li>
+                <li><a href="#packages">الباقات</a></li>
+                <li><a href="#loai">التعليمات</a></li>
+                <li><a href="#testimonials">آراء العملاء </a></li>
+                <li><a href="#FAQ">الاسئله الشائعة </a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+   <img class="hero-background-image" alt="lamsa desin logo hero section" src="images/lamsa.jpeg">
+      <div class="hero-content">
+        <h1 class="hero-title">نحول أفكارك إلى حلول رقميه تُحدث فرقاً </h1>
+        <p class="hero-subtitle">في<span class="lamsa-brand">Codevia</span> نصمم ونطوّر مواقع الويب، تطبيقات الجوال، والأنظمة الذكية باستخدام أحدث التقنيات، لنساعدك على بناء منتجات رقمية سريعة، آمنة، وقابلة للنمو</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primiary">الأعمال </a>
+          <a href="#contact" class="btn btn-secondary">اطلب موقعك </a>
+        </div>
+        <div class="hero-icons">
+            <a href="https://www.facebook.com/share/198aAerJpg/">
+            <i class="fab fa-facebook"></i>
+            </a>
+            <a href=" https://wa.me/201019959333">
+            <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section projects-header">
+        <div class="container">
+            
+            
+            <div class="projects-header">
+    <h2 class="section-title">Projects</h2>
+
+    <button id="toggleProjects">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-thumbnail">
+                        <img  src="images/project1.png">
+                    </div>
+                    <div class="project-content">
+                            <h3 class="project-label">بورتفليو لمسه تصميم </h3>
+                            <p class="project-description">لمسة تصميم – موقع بورتفوليو
+موقع بورتفوليو احترافي تم تطويره لعرض أعمال لمسة تصميم بطريقة عصرية وجذابة. يتميز بتصميم متجاوب يعمل على جميع الأجهزة، مع واجهة مستخدم سهلة الاستخدام، وأقسام مخصصة لعرض الخدمات، المشاريع، آراء العملاء، ووسائل التواصل. تم التركيز على سرعة الأداء، تجربة المستخدم، والالتزام بأفضل معايير تطوير الويب لتقديم حضور رقمي احترافي يعكس هوية العلامة التجارية.</p>
+                        </div>
+<a href="https://loaiesamkmal-hub.github.io/Lamsa-Design-portfolio/" target="_blank" rel="noopener noreferrer" class="project-link">Watch project<i class="fas fa-external-link-alt"></i></a>
+                </article>
+                
+            </div>
+        </div>
+    </section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <div class="container">
+
+        <h2 class="section-title">خدماتي</h2>
+        <p class="section-subtitle">
+            أقدم حلولاً احترافية لتطوير المواقع الإلكترونية بأحدث التقنيات.
+        </p>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>تطوير المواقع</h3>
+
+                <p>
+                    تطوير مواقع إلكترونية سريعة وآمنة ومتوافقة مع جميع الأجهزة باستخدام أحدث التقنيات.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <h3>واجهات المستخدم</h3>
+
+                <p>
+                    تصميم واجهات عصرية وسهلة الاستخدام مع تجربة مستخدم احترافية.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <h3>تصميم متجاوب</h3>
+
+                <p>
+                    جميع المواقع تعمل بكفاءة على الهواتف والأجهزة اللوحية وأجهزة الكمبيوتر.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-gauge-high"></i>
+                </div>
+
+                <h3>تحسين الأداء</h3>
+
+                <p>
+                    تحسين سرعة تحميل الموقع ورفع الأداء للحصول على أفضل تجربة للمستخدم.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>الحماية والأمان</h3>
+
+                <p>
+                    تطبيق أفضل ممارسات الأمان لحماية الموقع وبيانات المستخدمين.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <h3>الدعم الفني</h3>
+
+                <p>
+                    متابعة وصيانة مستمرة للموقع مع دعم فني سريع عند الحاجة.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="packages-section">
+    <div class="container">
+
+        <h2 class="section-title">باقات تطوير المواقع</h2>
+
+        <p class="section-subtitle">
+            اختر الباقة المناسبة لاحتياجات مشروعك
+        </p>
+
+        <div class="packages-grid">
+
+            <!-- الباقة الأساسية -->
+            <div class="package-card">
+                <h3>الباقة الأساسية</h3>
+
+                <span class="package-price">4,999 ج.م</span>
+
+                <ul>
+                    <li>موقع حتى 5 صفحات</li>
+                    <li>تصميم متجاوب مع جميع الأجهزة</li>
+                    <li>نموذج تواصل</li>
+                    <li>تحسين SEO أساسي</li>
+                    <li>ربط واتساب</li>
+                    <li>مدة التنفيذ 7 - 10 أيام</li>
+                </ul>
+
+                <a href="#contact" class="package-btn">
+                    اطلب الآن
+                </a>
+            </div>
+
+            <!-- الباقة الاحترافية -->
+            <div class="package-card featured">
+
+                <span class="badge">الأكثر طلبًا</span>
+
+                <h3>الباقة الاحترافية</h3>
+
+                <span class="package-price">9,999 ج.م</span>
+
+                <ul>
+                    <li>موقع حتى 10 صفحات</li>
+                    <li>تصميم احترافي مخصص</li>
+                    <li>لوحة تحكم</li>
+                    <li>تحسين السرعة وSEO</li>
+                    <li>ربط وسائل التواصل</li>
+                    <li>ربط خرائط جوجل</li>
+                    <li>مدة التنفيذ 10 - 20 يومًا</li>
+                </ul>
+
+                <a href="#contact" class="package-btn">
+                    اطلب الآن
+                </a>
+
+            </div>
+
+            <!-- الباقة المخصصة -->
+            <div class="package-card">
+
+                <h3>الباقة المخصصة</h3>
+
+                <span class="package-price">تبدأ من 19,999 ج.م</span>
+
+                <ul>
+                    <li>تصميم وبرمجة حسب الطلب</li>
+                    <li>لوحة تحكم متقدمة</li>
+                    <li>ربط APIs وأنظمة خارجية</li>
+                    <li>متجر إلكتروني أو نظام حجز</li>
+                    <li>دعم وصيانة بعد التسليم</li>
+                    <li>تنفيذ حسب متطلبات المشروع</li>
+                </ul>
+
+                <a href="#contact" class="package-btn">
+                      اطلب الآن
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <section id="loai" class="section process-section">
+        <div class="container">
+            <h2 class="section-title">التعليمات </h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div  class="process-number">01</div>
+                    <h3 class="process-step-title">إدخال البيانات</h3>
+                    <p class="process-step-description">املأ نموذج الطلب وأدخل جميع تفاصيل مشروعك بدقة لضمان فهم احتياجاتك.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">02</div>
+                    <h3 class="process-step-title">مراجعة الطلب</h3>
+                    <p class="process-step-discription">يقوم فريقنا بمراجعة المتطلبات وتحليل المشروع وإعداد أفضل الحلول المناسبة.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">03</div>
+                    <h3 class="process-step-title">التواصل </h3>
+                    <p class="process-step-discription">نتواصل معك لمناقشة التفاصيل النهائية، تقديم عرض السعر، والبدء في تنفيذ المشروع بعد الموافقة.</p>
+                </div>
+            </div>
+  
+            </div>
+        </div>
+    </section>
+
+
+<section id="testimonials" class="section testimonials-section">
+    <div class="container">
+        <h2 class="section-title">آراء العملاء </h2>
+        <div class="testimonials-grid">
+            <article class="testimonial-card">
+                <p class="testimonial-quote"> "تجربه رائعة وتعامل احترافي، أنصح بالعمل معه بشدة "</p>
+                <div class="testimonial-auther">
+                    <strong>Esam Kmal</strong>
+                    <span>صاحب بن العميد مصر </span>
+                </div>
+            </article>
+            <article class="testimonial-card">
+                <p class="testimonial-quote">"تجربة ممتازة من البداية للنهاية. تم تطوير الموقع باحترافية، وكان التواصل سريعًا والنتيجة فاقت توقعاتي."</p>
+                <div class="testimonial-auther">
+                    <strong>Mohamed Ahmad</strong>
+                    <span>صاحب شركه FastSupply</span>
+                </div>
+            </article>
+            <article class="testimonial-card">
+                <p class="testimonial-quote">"أعجبني الاهتمام بالتفاصيل وسرعة تنفيذ المشروع. الموقع أصبح أسرع وأسهل في الاستخدام، وأنصح بالتعامل مع Cadevia."</p>
+                <div class="testimonial-auther">
+                    <strong>Mahmood Ali</strong>
+                    <span>صاحب متجر إلكتروني </span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="FAQ" class="section faq-section">
+    <div class="container">
+    <h2 class="section-title">الأسئلة الشائعة</h2>
+    <div class="faq-list">
+        <details class="faq-item">
+            <summary class="faq-question">ما أنواع المواقع التي تطورها Cadevia؟</summary>
+            <div class="feq-answer">
+                <p>نطور مواقع الشركات، المواقع التعريفية، المتاجر الإلكترونية، ولوحات التحكم، مع حلول مخصصة تناسب احتياجات كل عميل.</p>
+
+            </div>
+        </details>
+        <details class="faq-item">
+            <summary class="faq-question">كم يستغرق تطوير الموقع؟</summary>
+            <div class="feq-answer">
+                <p>تعتمد المدة على حجم المشروع ومتطلباته، وعادةً تستغرق من أسبوعين إلى 8 أسابيع.</p>
+
+            </div>
+        </details>
+        <details class="faq-item">
+            <summary class="faq-question">هل سيكون الموقع متوافقًا مع الهواتف المحمولة؟</summary>
+            <p class="feq-answer">نعم، جميع المواقع التي نطورها تكون متجاوبة بالكامل وتعمل بكفاءة على الهواتف والأجهزة اللوحية وأجهزة الكمبيوتر.</p>
+
+           
+        </details>
+        <details class="faq-item">
+            <summary class="faq-question">هل تقدمون الدعم والصيانة بعد إطلاق الموقع؟</summary>
+            <p class="feq-answer">نعم، نوفر خدمات الدعم الفني والصيانة لضمان استمرار عمل الموقع بكفاءة وإجراء التحديثات اللازمة.</p>
+
+            
+        </details>
+        <details class="faq-item">
+            <summary class="faq-question">كيف أبدأ مشروع تطوير موقعي معكم؟</summary>
+            <p class="feq-answer">تواصل معنا وشاركنا فكرة مشروعك، وسنقوم بتحليل احتياجاتك، ثم نقدم لك عرضًا مناسبًا وخطة عمل واضحة قبل بدء التنفيذ.</p>
+
+            
+        </details>
+    </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+<section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title">تواصل معي </h2>
+      <p class="section-subtitle"></p>
+      
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">الاسم *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">الإيميل  *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="brand">اسم البراند</label>
+          <input type="text" id="brand" name="brand">
+        </div>
+
+        <div class="form-group">
+          <label>نوع المشروع </label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="content-type" value="short-form">
+              <span>بورتوفليو احترافي </span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="content-type" value="short-loai">
+              <span>موقع تعريفي </span>
+            </label>
+              <label class="radio-label">
+              <input type="radio" name="content-type" value="short-esam">
+              <span>موقع شركة </span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="content-type" value="long-form">
+              <span>موقع احترافي</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="content-type" value="both">
+              <span>متجر إلكتروني متكامل </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">تفاصيل المشروع</label>
+          <textarea id="message" name="message" rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-submit">إرسال </button>
+      </form>
+
+      <div class="contact-direct">
+        <a href="https://wa.me/201019959333" target="_blank">
+    01016659333
+</a>
+      </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Codevia. Web Developer.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/198aAerJpg/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href=" https://wa.me/201019959333" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+  <div id="projectModal" class="modal">
+    <span class="close-modal">&times;</span>
+
+    <div class="modal-content">
+        <img id="modalImage">
+
+        <div class="modal-info">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+</div>
+<a href="https://wa.me/201019959333" class="floating-whatsapp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
