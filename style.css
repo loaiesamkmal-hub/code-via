@@ -5,11 +5,13 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #030308;
-    color: #e0e0e0;
-    line-height: 1.6;
-    overflow-x: hidden;
+    background:#0d1117;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial, sans-serif
+    
 }
 
 html {
@@ -184,18 +186,70 @@ html {
     box-shadow: 0 6px 25px rgba(0, 114, 255, 0.6);
 }
 
-.btn-secondary {
-    background-color: transparent;
-    color: #00c6ff;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-    border: 2px solid #0072ff;
+.glow-btn{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px 40px;
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    border-radius:14px;
+    background:#111827;
+    border:2px solid #1f2937;
+    overflow:hidden;
+    transition:.35s;
+    z-index:1;
 }
 
-.btn-secondary:hover {
-    background-color: rgba(0, 114, 255, 0.1);
-    transform: translateY(-2px);
+.glow-btn::before{
+    content:"";
+    position:absolute;
+    inset:-3px;
+    background:linear-gradient(
+        90deg,
+        #00e5ff,
+        #0066ff,
+        #7b2cff,
+        #00e5ff
+    );
+    background-size:300%;
+    border-radius:16px;
+    filter:blur(12px);
+    opacity:0;
+    transition:.35s;
+    animation:glow 4s linear infinite;
+    z-index:-2;
 }
 
+.glow-btn::after{
+    content:"";
+    position:absolute;
+    inset:2px;
+    background:#111827;
+    border-radius:12px;
+    z-index:-1;
+}
+
+.glow-btn:hover{
+    transform:translateY(-4px) scale(1.04);
+    color:#fff;
+}
+
+.glow-btn:hover::before{
+    opacity:1;
+}
+
+@keyframes glow{
+    0%{
+        background-position:0% 50%;
+    }
+    100%{
+        background-position:300% 50%;
+    }
+}
 .hero-icons {
     display: flex;
     gap: 2rem;
