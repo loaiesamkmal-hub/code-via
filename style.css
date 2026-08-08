@@ -346,40 +346,7 @@ textarea {
 }
 
 
-/* =========================
-   زرار اطلب موقعك - Strong Glow
-========================= */
-
-.glow-btn {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 220px;
-    min-height: 58px;
-
-    padding: 16px 30px;
-
-    background: linear-gradient(
-        135deg,
-        #00c6ff,
-        #0072ff,
-        #8b2cff
-    );
-
-    background-size: 200% 200%;
-
-    color: #fff;
-    text-decoration: none;
-
-    border-radius: 12px;
-
-    font-size: 1rem;
-    font-weight: 700;
-
-    overflow: hidden;
-    isolation: isolate;
+isolation: isolate;
 
     border: 1px solid rgba(0, 198, 255, 0.7);
 
@@ -396,64 +363,7 @@ textarea {
     animation: buttonGradient 4s ease infinite;
 }
 
-/* اللمعة اللي بتعدي على الزرار */
-.glow-btn::before {
-    content: "";
 
-    position: absolute;
-
-    top: -50%;
-    left: -100%;
-
-    width: 60%;
-    height: 200%;
-
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,0.45),
-        transparent
-    );
-
-    transform: rotate(20deg);
-
-    transition: left 0.7s ease;
-
-    z-index: -1;
-}
-
-/* الهالة الخارجية */
-.glow-btn::after {
-    content: "";
-
-    position: absolute;
-
-    inset: -3px;
-
-    border-radius: inherit;
-
-    background: linear-gradient(
-        90deg,
-        #00c6ff,
-        #0072ff,
-        #9e33f6,
-        #00c6ff
-    );
-
-    background-size: 300% 300%;
-
-    z-index: -2;
-
-    filter: blur(10px);
-
-    opacity: 0;
-
-    transition:
-        opacity 0.35s ease,
-        filter 0.35s ease;
-
-    animation: glowBorder 3s linear infinite;
-}
 
 /* =========================
    Hover
@@ -2239,3 +2149,187 @@ textarea {
 /* =========================================================
    END OF CSS
 ========================================================= */
+/* =====================================
+   ULTIMATE CTA BUTTON
+===================================== */
+
+.hero .glow-btn {
+    position: relative !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 220px !important;
+    height: 60px !important;
+
+    padding: 0 !important;
+
+    color: #fff !important;
+    background: linear-gradient(
+        120deg,
+        #00c6ff,
+        #0072ff,
+        #7b2cff,
+        #00c6ff
+    ) !important;
+
+    background-size: 300% 300% !important;
+
+    border: 2px solid rgba(0, 198, 255, .8) !important;
+    border-radius: 12px !important;
+
+    text-decoration: none !important;
+
+    font-size: 17px !important;
+    font-weight: 700 !important;
+
+    cursor: pointer !important;
+
+    overflow: hidden !important;
+
+    box-shadow:
+        0 0 10px rgba(0,198,255,.5),
+        0 0 25px rgba(0,114,255,.4) !important;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease !important;
+
+    animation: ctaGradient 4s ease infinite !important;
+}
+
+
+/* اللمعة */
+
+.hero .glow-btn::before {
+    content: "" !important;
+
+    position: absolute !important;
+
+    top: -80% !important;
+    left: -120% !important;
+
+    width: 60% !important;
+    height: 260% !important;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.8),
+        transparent
+    ) !important;
+
+    transform: rotate(25deg) !important;
+
+    transition: left .6s ease !important;
+
+    pointer-events: none !important;
+}
+
+
+/* الهالة */
+
+.hero .glow-btn::after {
+    content: "" !important;
+
+    position: absolute !important;
+
+    inset: -8px !important;
+
+    border-radius: 16px !important;
+
+    background: linear-gradient(
+        90deg,
+        #00c6ff,
+        #0072ff,
+        #9e33f6,
+        #00c6ff
+    ) !important;
+
+    background-size: 300% 300% !important;
+
+    filter: blur(15px) !important;
+
+    opacity: 0 !important;
+
+    z-index: -1 !important;
+
+    transition: opacity .3s ease !important;
+
+    animation: ctaGlow 3s linear infinite !important;
+}
+
+
+/* =====================================
+   HOVER
+===================================== */
+
+.hero .glow-btn:hover {
+
+    transform: translateY(-7px) scale(1.06) !important;
+
+    border-color: #ffffff !important;
+
+    box-shadow:
+        0 0 10px #00c6ff,
+        0 0 25px #00c6ff,
+        0 0 50px #0072ff,
+        0 0 80px rgba(158,51,246,.6) !important;
+}
+
+
+.hero .glow-btn:hover::before {
+    left: 140% !important;
+}
+
+
+.hero .glow-btn:hover::after {
+    opacity: 1 !important;
+}
+
+
+/* الضغط */
+
+.hero .glow-btn:active {
+    transform: scale(.96) !important;
+}
+
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+@keyframes ctaGradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
+@keyframes ctaGlow {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
